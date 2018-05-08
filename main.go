@@ -14,6 +14,7 @@ var (
 	user string
 )
 
+// entry point
 func main() {
 	//flag.SomeFunction(user.string)
 	//a := "a"
@@ -28,6 +29,7 @@ func main() {
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
+	// if multiple users are passed separated by commas, store them in a "users" array
 
 	users := strings.Split(user, ",")
 	fmt.Printf("Searching user(s): %s\n", users)
